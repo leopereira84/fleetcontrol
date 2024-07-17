@@ -29,7 +29,6 @@ export function SignIn() {
 
       if (idToken) {
         const credentials = Realm.Credentials.jwt(idToken)
-        console.log(idToken)
 
         await app.logIn(credentials)
       } else {
